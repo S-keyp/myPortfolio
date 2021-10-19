@@ -1,0 +1,201 @@
+/* #212529 (fullblack)
+#343a40 (noir)
+#dee2e6 (darker white)
+#f8f9fa (blanc)
+#198754 (vert)
+#ffc107 (jaune)
+#7952b3 (violet)
+#dc3545 (rouge) */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+body{
+    background-color: #dee2e6;
+}
+.grey{
+    background-color: #dee2e6;
+    border-color: #343a40;
+}
+
+/* HEADER */
+header{
+    background-color: #212529;
+}
+
+.navbar{
+    justify-content:end;
+}
+
+.navbar a{
+    color: #dee2e6;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 0;
+    margin: 5px 0;
+    text-align: center;
+    display: block;
+}
+
+li.navbar-item.nav-link{
+    display: flex;
+    align-items: center;
+}
+
+.navbar a:hover{
+    background-color: #dee2e6;
+    border-radius: 7px;
+    color: #343a40;
+    transition: all 500ms ease-in-out;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding: 0 1rem;
+    justify-content: end;
+}
+
+#logo{
+    opacity: 0.8;
+    max-height: 100px;
+}
+
+/* CUSTOM COLOR TOGGLER ICON */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(121, 82, 179, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #7952b3;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        justify-content: space-around;
+    }
+}
+
+/*  MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .container{
+    margin: 15px auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+main .main-container p{
+    padding: 1.5rem;
+}
+
+h2{
+    padding: 1rem;
+    margin-top: 10px;
+    font-size: 2.5rem;
+    background-color: #343a40;
+    color: #f8f9fa;
+    border-radius: 3px;
+}
+
+h3{
+    margin-top: 0.5rem;
+    padding: 0.5rem 0;
+    color: #212529;
+}
+
+.container:last-child h3{
+    color: #f8f9fa;
+}
+
+.container:last-child a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+main .container:nth-child(odd){
+    background-color: #343a40;
+}
+
+main .container:nth-child(odd) h2{
+    background-color: #dee2e6;
+    color: #343a40;
+}
+
+.parallax {
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    color: white;
+    background: url(/assets/img//The\ block.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.parallax h1 {
+    margin-left: 1.5rem;
+}
+
+.subtitle{
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+
+}
+
+#profil-pict{
+    max-width: 300px;
+    padding: 10px;
+}
+
+.icon-img, #mesCreations div img{
+    max-width: 150px;
+    padding: 15px 0;
+}
+
+.svg-spe{
+    width: 50px;
+}
+
+.cv-button{
+    display: block;
+    width: 10rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-radius: 15%;
+    border: 1px solid white;
+    color: white;
+    margin: 0.5rem auto;
+}
+
+.cv-button:hover{
+    cursor: pointer;
+    background-color: #212529;
+    border-color: #7952b3;
+    transition: all 500ms;
+}
+
+
+
+/* FOOTER */
+footer{
+    background-color: #212529;
+    color: white;
+}
+
+.footer-copy{
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px 0;
+}

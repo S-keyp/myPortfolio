@@ -1,0 +1,18 @@
+/* SPECIAL TEST CAROUSSEL */
+.carousel-title{
+    font-family: pirulen;
+    padding: 15px;
+}
+
+h2.carousel-title{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 50px;
+}
+
+.carousel-spe img{
+    width: 70vw;
+    height: 60vh;
+    border-radius:2px;
+    margin-bottom: 20px;
+}

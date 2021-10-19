@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>        
+        <link rel="stylesheet" type="text/css" href="css/styleV2.css">
+        <title>Bootstrap Project V2</title>
+    </head>
+    <body>
+        <header class="container-fluid">
+            <nav class="navbar navbar-expand-sm row">
+                <a href="#home" class="navbar-brand col-sm-3"><img src="assets Wars/img/star-wars-g1049f4ab0_1280.png" id="logo" alt="logo"></a>
+                <button class="navbar-toggler navbar-light white" type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#myNavbar" 
+                        aria-controls="mynavbar" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span><!-- l'icone du menu replier -->
+                </button>
+                <div class="col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
+                <div class="collapse navbar-collapse col-sm-8 col-md-7 col-lg-6 col-xl-5" id="myNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="navbar-item nav-link" id="li-nav">
+                            <a href="#home" class=" text-center">Home</a>
+                        </li>
+                        <li class="navbar-item nav-link" id="li-nav">
+                            <a href="#ourStory" class=" text-center">Our story</a>
+                        </li>
+                        <li class="navbar-item nav-link" id="li-nav">
+                            <a href="#becomeAJedi" class=" text-center">Become a Jedi</a>
+                        </li>
+                        <li class="navbar-item nav-link" id="li-nav">
+                            <a href="#becomeASith" class=" text-center">Join the darkside</a>
+                        </li>
+                    </ul>
+                </div>
+                   <!-- dat-bs-toggle ca veut dire que je pourrait le déplier -->
+            </nav>
+        </header>
+
+    <!-- <header class="container-fluid"> !!! Ancien Header !!!
+            <div class="row">
+                <div class="col-sm-12 col-md"><img src="assets/img/star-wars-g1049f4ab0_1280.png" id="logo" alt="logo"></div>
+                <div class="col-sm-6 col-md d-flex align-items-center"><p>Accueil</p></div>
+                <div class="col-sm-6 col-md d-flex align-items-center"><p>Mes compétences</p></div>
+                <div class="col-sm-6 col-md d-flex align-items-center"><p>Devenir Jedi</p></div>
+                <div class="col-sm-6 col-md d-flex align-items-center"><p>Devenir Sith</p></div>
+            </div>
+        </header> -->
+
+        <main>
+            <!-- Prmière partie -->
+            <div class="container">
+                <h1 class="grey text-uppercase" id="home">Hello general</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis possimus voluptatem non pariatur illo deserunt aspernatur rem in rerum quia!</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 text-center align-self-center"><img id="feurst" src="/Projets/StarWars Bootstrap project/assets Wars/img/mountains-g67f13cf49_1920.jpg" alt="Montagne"></div>
+                    <div class="row col-sm-12 col-md-6">
+                        <div class="grey align-self-start"><h2>May the 4th B w/ U</h2></div>
+                        <div class="align-self-start text-start"><p>Lorem, ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias minima eos inventore accusamus iste aut voluptatem fugit, facere blanditiis possimus, doloremque quidem similique quibusdam est molestiae deleniti a, maxime eum! Fuga ex recusandae vitae quisquam inventore provident autem architecto ullam adipisci ducimus quos voluptatem dicta sequi rem, modi mollitia alias?</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deuxième partie -->
+            <div class="container">
+                <div class="row">
+                    <div class="row col-sm-12 col-md-7 col-lg-6">
+                        <div class="grey align-self-start text-center text-uppercase fw-bold"><h2 id="ourStory">A long time ago, in a galaxy far away...</h2></div>
+                        <div class="align-self-start text-end"><p>The dead speak! The galaxy has heard a mysterious broadcast, a threat of REVENGE in the sinister voice of the late EMPEROR PALPATINE.
+                            GENERAL LEIA ORGANA dispatches secret agents to gather intelligence, while REY, the last hope of the Jedi, trains for battle against the diabolical FIRST ORDER.
+                            Meanwhile, Supreme Leader KYLO REN rages in search of the phantom Emperor, determined to destroy any threat to his power....</p></div>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-6 text-center align-self-center"><img id="widepict" src="/Projets/StarWars Bootstrap project/assets Wars/img/star-wars-g5019beadb_1920.jpg" alt="forêt" ></div>
+                </div>
+            </div>
+
+            <!-- Troisième partie -->
+            <div class="container">
+                <div class="row">
+                    <div class="row col-sm-12 col-md-7 col-lg-6 card-container">
+                        <div class="card">
+                            <img src="assets Wars/img/obi-wa.jpg" alt="obiwan" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Obiwan need you!
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi.</p>
+                                <button class="btn btn-primary" id="btn-left" 
+                                        data-bs-target="#exampleModal" 
+                                        data-bs-toggle="modal">
+                                    Join the bright side
+                                </button>
+                                <div class="modal fade" id="exampleModal"
+                                    tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">And another one..</h5>
+                                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Unfortunately the formation you are trying to reach is already full.. :(
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                                                <button class="btn btn-info">Learn more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-sm-12 col-md-5 col-lg-6 text-center">
+                        <div class="grey align-self-end text-center fw-bold">
+                            <h2 id="becomeAJedi">Becoming Jedi</h2>
+                        </div>
+                        <div class="align-self-start text-start">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto molestias aspernatur minus placeat a temporibus facilis ducimus ex dolore neque.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quatrième partie -->
+            <div class="container">
+                <div class="row">
+                    <div class="row col-sm-12 col-md-5 col-lg-6">
+                        <div class="grey align-self-end text-center fw-bold">
+                            <h2 id="becomeASith">Be part of the darkside</h2>
+                        </div>
+                        <div classe="align-self-start text-end" >
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto molestias aspernatur minus placeat a temporibus facilis ducimus ex dolore neque.</p>
+                        </div>
+                    </div>
+                    <div class="row col-sm-12 col-md-7 col-lg-6 card-container">
+                        <div class="card">
+                            <img src="assets Wars/img/darth vader.jpg" alt="darthvader" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    This dude needs you too
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi.</p>
+                                <button class="btn btn-primary" id="btn-right" 
+                                        data-bs-target="#exampleModal" 
+                                        data-bs-toggle="modal">
+                                    Join the darkside
+                                </button>
+                                <div class="modal fade" id="exampleModal"
+                                    tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    data-bs-backdrop="false"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">What did you think?</h5>
+                                                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                You may not reach the darkside formation,
+                                                the darkside formation will reach you..
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+                                                <button class="btn btn-info">Learn more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAROUSEL -->
+            <h2 class="carousel-title text-center grey">Our best memories!</h2>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="carousel-spe col-md-8">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets Wars/img/carrousel 1.jpg" alt="Carousel slide 1" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets Wars/img/carrousel 2.jpg" alt="Carousel slide 2" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets Wars/img/carrousel 3.jpg" alt="Carousel slide 3" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets Wars/img/carrousel 4.jpg" alt="Carousel slide 4" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets Wars/img/R2D2.jpg" alt="Carousel slide 5" class="d-block w-100">
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-control-prev" type="button" 
+                                data-bs-target="#carouselExampleControls"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" 
+                                data-bs-target="#carouselExampleControls" 
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div> 
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            
+            <footer class="container-fluid">
+                <p>
+                    Ces liens ont été vandalisé par le côté obscur,
+                    nous travaillons a leur rétablissement..
+                </p>
+                <div class="row">
+                    <div class="footerlink col-sm-6 col-md">Qui somme nous?</div>
+                    <div class="footerlink col-sm-6 col-md">Nous contacter</div>
+                    <div class="footerlink col-sm-6 col-md">Les autres liens</div>
+                    <div class="footerlink col-sm-6 col-md">Aide</div>
+                    <div class="col-sm-12 col-md-12">&copy; S-keyp - 2021</div>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
