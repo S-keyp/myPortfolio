@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h2{
+    text-align: center;
+    font-weight: 700;
+}
+
+h3{
+    text-align: right;
+    font-weight: 500;
+    padding: 1em 2em;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body main{
+    background: rgb(85, 85, 85);
+    color: #fff;
+    width: 70%;
+    height: 100vh;
+    float: left;
+}
+
+main .full-name{
+    display: block;
+    text-align: center;
+    margin: 0.7em 0;
+    -webkit-box-reflect: below -25px linear-gradient(transparent, rgba(0,0,0,0.2));
+}
+
+main .full-name span{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 2em;
+    padding: 0.3em;
+    font-weight: 800;
+    animation: animate 1s ease-in-out infinite;
+    animation-delay: calc(0.07s * var(--i));
+}
+
+@keyframes animate {
+    20%{
+        transform: translateY(-20px);
+    }
+    40%, 100%{
+        transform: translateY(0px);
+    }
+}
+
+.formation, .experience {
+    display: none;
+}
+
+.formation.active, .experience.active {
+    display: block;
+}
+
+.container-no-display > div{
+    display: none;
+    text-align: center;
+    padding: 1em;
+}
+
+main .container-no-display > div.active{
+    display: block;
+    animation: fade-in 750ms ease-in-out;
+}
+
+.container-no-display > div.active:hover{
+    cursor: pointer;
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+        height: 0;
+    }
+    50%{
+        opacity: 0.5;
+        height: 50%;
+    }
+    100% {
+        opacity: 1;
+        height: 100%;
+    }
+}
+
+.cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em;
+}
+
+.card{
+    width: 6em;
+    height: 4em;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 20%;
+    border: solid 2px white;
+    transition: transform 750ms ease-in-out;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card.active{
+    transform: scale(1.4);
+}
+
+.line{
+    height: 0;
+    width: 80%;
+    margin: auto;
+    margin-top: -1px;
+    border-bottom: 1px solid #fff;
+}
+
+body .side-bar{
+    background: lightgray;
+    width: 30%;
+    height: 100vh;
+    float: right;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.side-bar .profil-content img{
+    margin-right: 10px;
+}
+
+#picofme{
+    width: 150px;
+    height: 150px;
+}
+main h4{
+    padding: 0.5em;
+    font-size: 1.25em;
+}
+.side-bar h4 {
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+.side-bar .langues, .side-bar .interets{
+    text-align: center;
+}
