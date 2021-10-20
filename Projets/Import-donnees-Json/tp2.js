@@ -1,6 +1,6 @@
 function init() {
     let req = new XMLHttpRequest(); 
-    req.open("GET", "http://digicode.cleverapps.io/json/pays/pollution");
+    req.open("GET", "https://digicode.cleverapps.io/json/pays/pollution");
     req.onreadystatechange = function() {
         if (req.readyState == 4 && req.status == 200){  
             let data = JSON.parse(req.responseText); 
