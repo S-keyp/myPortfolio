@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#fa5716">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="description" content="Sunpower conçoit et commercialise des panneaux solaires à haut rendement">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- leaflet css -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+            crossorigin="" />
+        <!-- Main css -->
+        <link href="/assets/css/main.css" rel="stylesheet">
+        <title>Accueil - SUNPOWER</title>
+    </head>
+
+    <body>
+        
+        <!-- ======= Header Section ======= -->
+        <div class="container">
+            <header
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    <img src="/assets/img/sunpower-logo.png" alt="" width="90" height="90">
+                </a>
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li>
+                        <a href="/index.html" class="nav-link active px-2 link-dark">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="/about.html" class="nav-link px-2 link-dark">Mieux nous connaitre</a>
+                    </li>
+                    <li>
+                        <a href="/product.html" class="nav-link px-2 link-dark">Nos ombrières solaires</a>
+                    </li>
+                </ul>
+                <div class="col-md-3 text-end">
+                    <button type="button" class="btn btn-outline-primary me-2 sun-button">
+                        <a href="/contact.html">Nous contacter</a>
+                    </button>
+                </div>
+            </header>
+        </div>
+        <!-- Carousel -->
+        <main>
+            <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <span>Sunpower</span>
+                        <span class="second-span">le soleil au plus près de vous</span>
+                        <img src="/assets/img/accueil/Carousel1.jpg" alt="Carousel slide 1" class="w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <span>Sunpower</span>
+                        <span class="second-span">le soleil au plus près de vous</span>
+                        <img src="/assets/img/accueil/Carousel2.jpg" alt="Carousel slide 2" class="w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <span>Sunpower</span>
+                        <span class="second-span">le soleil au plus près de vous</span>
+                        <img src="/assets/img/accueil/Carousel3.jpg" alt="Carousel slide 3" class="w-100">
+                    </div>
+                </div>
+                <!-- Carousel controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- Section start -->
+            <section class="container-fluid row">
+                <div class="col-sm-12 col-md-5 col-lg-4 align-self-center">
+                    <img src="/assets/img/accueil/ombrieresolaire.jpg" alt="ombriere solaire">
+                </div>
+                <div class="col-sm-12 col-md-7 col-lg-8 orange-box">
+                    <h2>Les ombrières</h2>
+                        <aside> 
+                            Le développement des ombrières solaires pour la recharge des véhicules électriques constitue le
+                            pilier de notre développement. Le projet a été retenu par l’agglomération de Montpellier avec le
+                            déploiement de 4 ombrières solaires. Le projet est financé par l’agglomération de Montpellier, le
+                            conseil départemental et le conseil régional. Nous développons actuellement la commercialisation de
+                            ce projet en région Occitanie dans le cadre d’un partenariat. L’agglomération de Toulouse s’est déjà
+                            positionnée pour l’installation d’ombrières sur son territoire. Nous souhaitons activement
+                            communiquer sur ce partenariat et sur l’implantation d’ombrières à Montpellier afin d’augmenter
+                            notre visibilité et notre notoriété et faciliter la commercialisation auprès d’autres collectivités.
+                        </aside>
+                    <button type="button" class="btn btn-outline-primary me-2 sun-button sun-button-contact">
+                        <a href="/product.html">En savoir +</a>
+                    </button>
+                </div>
+            </section>
+
+            <section class="rentabilite container-fluid bgc-pict row">
+                <div class="text-over-bgc-pict mx-auto align-self-center row">
+                    <div class="box-rentabilite col-sm-12 col-md-8 col-lg-7 align-self-center">
+                        <h2>Rentabilité</h2>
+                        <p> Hormis l’investissement initial qui est lié au type d’installation photovoltaïque, la
+                            rentabilité d’un projet
+                            photovoltaïque dépendra ensuite essentiellement de la quantité d’énergie produite qui repose
+                            elle-même sur plusieurs facteurs :
+                            <ul>
+                                <li>
+                                    - Le lieu d’installation du projet qui est le critère essentiel pour définir
+                                    l’ensoleillement reçu ;
+                                </li>
+                                <li>
+                                    - L’inclinaison qui permet l’optimisation de l’ensoleillement reçu (ou pas) ;
+                                </li>
+                                <li>
+                                    - L’orientation des modules ;
+                                </li>
+                                <li>
+                                    - L’environnement qui peut potentiellement créer de l’ombrage.
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-5 align-self-center text-center">
+                        <img src="/assets/img/accueil/Sustainability.jpg" class="logo" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="container-fluid row">
+                <div class="col-sm-12 col-md-7 col-lg-8 orange-box overlaping-box">
+                    <h2>Ils nous ont fait confiance</h2>
+                    <aside> L’opposition est une partie naturelle de la vie. Tout comme nous développons nos muscles en
+                        soulevant des poids, nous développons notre caractère en surmontant des défis et des adversités.”
+                        -Stephen R Covey- <br> Et c'est notamment grace à nos tous premiers partenaires que nous avons
+                        réussi à aller aussi loin. C'est pourquoi nous souhaitions les remercier particulièrement pour leurs
+                        investissement depuis la première seconde et tout au long de notre parcours! 
+                    </aside>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-4 align-self-center row">
+                    <div class="row">
+                        <img class="logo mx-auto" src="/assets/img/logo/logo_mtp.jpg" alt="ombriere solaire">
+                    </div>
+                    <div class="row second-row">
+                        <img class="logo col-6 align-center" src="/assets/img/logo/ademe-logo.jpg" alt="ombriere solaire">
+                        <img class="logo col-6 align-center" src="/assets/img/logo/Region-Occitanie.png"
+                            alt="ombriere solaire">
+                    </div>
+                </div>
+            </section>
+
+            <section class="activites container-fluid row">
+                <div class="box-activites align-self-center text-center">
+                    <h2>Nos activités principales</h2>
+                    <ul>
+                        <li>
+                            La R&D |<a href="/about.html"><span class="textcoloract"> En savoir +</span></a>
+                        </li>
+                        <li>
+                            L’aide aux montages de projets à destination des entreprises et des collectivités |<a
+                                href="/product.html"><span class="textcoloract"> En savoir +</span></a>
+                        </li>
+                        <li>
+                            La commercialisation des ombrières |<a href="/product.html"><span class="textcoloract"> En savoir +</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="container-fluid row">
+                <h2 class="text-center sun-implantation">Nos implantations</h2>
+                <div class="container mx-auto" id="map-leaflet"></div>
+            </section>
+
+            <section id="nospartenaires" class="container-fluid">
+                <div class="container text-center bg-white">
+                    <h2 class="sun-partenaire">Nos partenaires</h2>
+                    <div class="row partner-row">
+                        <img class="col-2 col-md-4 img-spe d-block" src="/assets/img/logo/ademe-logo.jpg" alt="">
+                        <img class="col-2 col-md-4 img-spe d-block" src="/assets/img/logo/conseil-departemental_Logo34.jpg" alt="">
+                        <img class="col-2 col-md-4 img-spe d-block" src="/assets/img/logo/Groupe_PSA-Logo.wine.png" alt="">
+                        <img class="col-2 col-md-4 img-spe d-block" src="/assets/img/logo/logo-cea.png" alt="">
+                        <img class="col-2 col-md-4 img-spe d-block" src="/assets/img/logo/logo-herault.jpg" alt="">
+                        <img class="col-2 col-md-4 img-spe d-block" src="/assets/img/logo/Logo_INES_300dpi.jpg" alt="">
+                        <img class="col-2 col-md-4 img-spe d-block" src="/assets/img/logo/logo_mtp.jpg" alt="">
+                        <img class="col-2 col-md-4 img-spe d-block" src="/assets/img/logo/Logo_Region_Occitanie.png" alt="">
+                        <img class="col-2 col-md-4 img-spe d-block" src="/assets/img/logo/TLSE-METROPOLE-logo.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ======= FOOTER Section ======= -->
+        <div class="bg-footer">
+            <div class="container">
+                <footer class="row row-cols-auto row-cols-lg-5 py-5 my-5 border-top">
+                    <div class="col">
+                        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                            <img src="/assets/img/sunpower-logo.png" alt="" width="200" height="200">
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <h5>A propos</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="/about.html#nosfondateurs" class="nav-link p-0 text-muted">Nos fondateurs</a></li>
+                            <li class="nav-item mb-2"><a href="/index.html#nospartenaires" class="nav-link p-0 text-muted">Nos partenaires</a></li>
+                            <li class="nav-item mb-2"><a href="/informations.html" class="nav-link p-0 text-muted">Informations</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h5>Nos produits</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="/product.html" class="nav-link p-0 text-muted">Pour les
+                                    particuliers</a></li>
+                            <li class="nav-item mb-2"><a href="/product.html" class="nav-link p-0 text-muted">Pour les
+                                    professionnels</a></li>
+                            <li class="nav-item mb-2"><a href="/product.html" class="nav-link p-0 text-muted">Pour les
+                                    investisseurs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h5>Contactez nous</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="tel:0467010203" class="nav-link p-0 text-muted">Téléphone: 04
+                                    67 01 02 03</a></li>
+                            <li class="nav-item mb-2"><a href="/contact.html" class="nav-link p-0 text-muted">Pour plus
+                                    d'informations</a></li>
+                            <li class="nav-item mb-2"><a href="/contact.html" class="nav-link p-0 text-muted">Service
+                                    client</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h5>Suivez-nous</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="https://www.linkedin.com/"
+                                    class="nav-link p-0 text-muted">sur Linkedin</a></li>
+                            <li class="nav-item mb-2"><a href="https://www.linkedin.com/"
+                                    class="d-flex align-items-center mb-3 link-dark text-decoration-none footer-no-hover">
+                                    <img src="/assets/img/logo/linkedin-logo-png-linkedin-icon-white.png" alt=""
+                                        height="70">
+                                </a></li>
+                        </ul>
+                    </div>
+                </footer>
+                <div class="button-footer container-fluid row">
+                    <div class="align-self-center text-center">
+                        <a class="btn btn-light btn-outline-secondary" href="#" role="button">^</a>
+                    </div>
+                </div>
+                <div class="footer-ml-center">
+                    <ul class="nav d-inline-flex">
+                        <li class="nav-item mb-2"><a href="/legal/politiques-de-confidentialite.html" class="nav-link p-0 text-muted footer-no-hover">Politique de confidentialité |</a></li>
+                        <li class="nav-item mb-2"><a href="/legal/mentions-legales.html" class="nav-link p-0 text-muted footer-no-hover">Mentions légales |</a></li>
+                        <li class="nav-item mb-2"><a href="/legal/conditions-generales-de-ventes.html" class="nav-link p-0 text-muted footer-no-hover">Conditions Générales de Vente</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <!-- leaflet Js -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+        <!-- Index Js -->
+        <script src="assets/js/index.js"></script>
+    </body>
+
+</html>

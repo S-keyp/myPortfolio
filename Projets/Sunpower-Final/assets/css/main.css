@@ -1,0 +1,835 @@
+/*-------------------------------------------------------------- # Root --------------------------------------------------------------*/
+
+:root {
+    --primary-color: #ff6600;
+    --secondary-color: #669933;
+    --tertiary-color: #0066cc;
+    --quatro-color: #5c5c5c;
+  }
+  
+  /*-------------------------------------------------------------- # Global --------------------------------------------------------------*/
+  @font-face {
+    font-family: "Muli";
+    src: url("../fonts/muli/Muli.ttf");
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  body,
+  html {
+    height: 100%;
+    font-family: Muli, Arial, Helvetica, sans-serif;
+    /* background-color: white; */
+  }
+  
+  /*-------------------------------------------------------------- # Header --------------------------------------------------------------*/
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: solid rgba(0, 0, 0, 0.15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+      inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+  }
+  
+  .form-control-dark {
+    color: #fff;
+    background-color: var(--bs-dark);
+    border-color: var(--bs-gray);
+  }
+  .form-control-dark:focus {
+    color: #fff;
+    background-color: var(--bs-dark);
+    border-color: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+  }
+  
+  .bi {
+    vertical-align: -0.125em;
+    fill: currentColor;
+  }
+  
+  .text-small {
+    font-size: 85%;
+  }
+  
+  .dropdown-toggle {
+    outline: 0;
+  }
+  
+  .btn-outline-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .btn-outline-primary:hover {
+    color: #fff;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+  
+  .sun-button > a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .sun-button:hover > a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /*-------------------------------------------------------------- # Nav --------------------------------------------------------------*/
+  .nav li {
+    /* position du link actif */
+    position: relative;
+  }
+  
+  .nav a:before {
+    /* mise en forme du lien actif (soulignement vert) */
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 7;
+    background-color: var(--secondary-color);
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .nav a:hover:before,
+  .nav li:hover > a:before,
+  .nav .active:before {
+    /* rend visible le trait actif (soulignement vert) */
+    visibility: visible;
+    width: 35px;
+  }
+  .nav a:hover,
+  .nav .active,
+  .nav .active:focus,
+  .nav li:hover > a {
+    /* sinon le lien devient bleu */
+    color: var(--primary-color);
+  }
+  /*-------------------------------------------------------------- # Form --------------------------------------------------------------*/
+  #hidden_entreprise {
+    display: none;
+  }
+  
+  .form-control {
+    border-radius: 0.75rem;
+  }
+  .form-label,
+  .form-check-label {
+    color: white;
+  }
+  
+  .valid-feedback {
+    color: var(--secondary-color);
+  }
+  
+  .form-select.is-valid,
+  .was-validated .form-select:valid {
+    border-color: var(--secondary-color);
+  }
+  
+  .form-select.is-valid,
+  .was-validated .form-select:valid:focus {
+    border-color: var(--secondary-color);
+  }
+  
+  .form-control.is-valid,
+  .was-validated .form-control:valid {
+    border-color: var(--secondary-color);
+  }
+  .form-control.is-valid,
+  .was-validated .form-control:valid:focus {
+    border-color: var(--secondary-color);
+  }
+  .form-check-input.is-valid ~ .form-check-label,
+  .was-validated .form-check-input:valid ~ .form-check-label {
+    color: var(--secondary-color);
+  }
+  
+  .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  /*-------------------------------------------------------------- # Section --------------------------------------------------------------*/
+  section .container {
+    /* mise en forme des class container dans les sections */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    margin-bottom: 5%;
+  }
+  .section-title h2::after {
+    /* mise en forme du trait après le Contact */
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: var(--secondary-color);
+    margin: 4px 10px;
+  }
+  .section-title h2 {
+    font-size: 14px;
+    font-weight: 900;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: White;
+    font-family: "Muli", sans-serif;
+  }
+  .section-title p {
+    margin: 0;
+    margin: -15px 0 15px 0;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Muli", sans-serif;
+    color: white;
+  }
+  
+  /*-------------------------------------------------------------- # contact --------------------------------------------------------------*/
+  #contact {
+    display: flex;
+  }
+  .contact .contact-form input,
+  .contact .contact-form textarea {
+    box-shadow: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 0;
+    transition: 0.3s;
+    color: white;
+  }
+  
+  /*-------------------------------------------------------------- # Bouton --------------------------------------------------------------*/
+  .sun-form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin-left: 25%;
+    border: 0;
+    width: 50%;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    font-size: 16px;
+    color: white;
+    line-height: 1.2;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  .sun-form-btn i {
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  .sun-form-btn:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .sun-form-btn:hover i {
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  
+  /*-------------------------------------------------------------- # Footer --------------------------------------------------------------*/
+  
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: solid rgba(0, 0, 0, 0.15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+      inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+  }
+  
+  .bi {
+    vertical-align: -0.125em;
+    fill: currentColor;
+  }
+  
+  .bg-footer {
+    background-color: white;
+  }
+  
+  .bg-footer h5 {
+    color: black;
+  }
+  
+  .footer-ml-center {
+    text-align: center;
+  }
+  
+  .py-5 {
+    padding-bottom: 0rem !important;
+  }
+  
+  .my-5 {
+    margin-bottom: 0rem !important;
+  }
+  
+  .btn-outline-secondary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .btn-outline-secondary:hover {
+    color: white;
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+  }
+  
+  .footer-no-hover:before {
+    background-color: transparent !important;
+  }
+  
+  /*-------------------------------------------------------------- # ACCUEIL --------------------------------------------------------------*/
+  
+  .carousel-inner {
+    max-height: 400px;
+   
+  }
+
+  .carousel-inner  img {
+    max-height: 400px;
+  }
+  
+  .carousel-indicators img {
+    max-width: 100px;
+  }
+
+  
+  /* CTA STD */
+  .cta-std {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 25px;
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    padding: 15px;
+    border-radius: 5px 50px;
+    opacity: 0.9;
+  }
+  
+  .cta-std a {
+    color: #fff;
+    padding: 0.3rem;
+  }
+  
+  .cta-std img {
+    margin-left: 5px;
+  }
+  
+  .cta-right {
+    margin-left: 60%;
+  }
+
+  .sun-button-contact{
+    margin-left: 2%;
+  }
+  
+  /* MAIN CONTENT */
+  section.container-fluid.row {
+    margin: 1.5rem 0;
+  }
+  
+  section div img {
+    max-width: 100%;
+  }
+  
+  .orange-box {
+    border-radius: 0.5rem;
+  }
+  
+  .orange-box aside,
+  .orange-box h2 {
+    padding: 0.2rem 1rem;
+  }
+
+  .orange-box h2 {
+    color: var(--primary-color);
+  }
+  
+  .orange-box aside {
+    color: var(--quatro-color);
+  }
+
+  .rentabilite {
+    padding: 20px;
+  }
+
+  .box-rentabilite h2 {
+    color: var(--secondary-color);
+  }
+
+  .box-rentabilite p {
+    color: #fff;
+  }
+
+  .box-rentabilite ul {
+    color: #fff;
+  }
+
+  /*ACTIVITES*/
+
+  .activites {
+    margin: 0;
+    min-height: 60vh;
+    background-image: url(/assets/img/accueil/panneaux-solaires-photovoltaiques.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .box-activites {
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: #fff;
+    padding: 30px;
+  }
+
+  .box-activites h2 {
+    color: var(--secondary-color);
+  }
+
+  .box-activites a:link {
+    text-decoration: none;
+  }
+
+  .second-row {
+    margin: auto;
+    justify-content: center;
+  }
+  
+  img.logo {
+    max-width: 9rem;
+    max-height: 9rem;
+  }
+  
+  .overlaping-box {
+    transform: translateX(7%);
+    z-index: -1;
+  }
+  
+  .bgc-pict {
+    background-image: url(../img/accueil/photovoltaic-system-g6548cd95f_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .text-over-bgc-pict {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+    border-radius: 1.5rem;
+  }
+  
+  .text-over-bgc-pict h2,
+  .text-over-bgc-pict p,
+  .text-over-bgc-pict li {
+    padding: 0.2rem 0.3rem;
+  }
+  
+  #map-leaflet {
+    height: 350px;
+    margin: 15px 0;
+  }
+  
+  section div div .img-spe {
+    max-width: 20%;
+    padding: 2%;
+  }
+  
+  .partner-row {
+    justify-content: center;
+  }
+  /*-------------------------------------------------------------- # A PROPOS --------------------------------------------------------------*/
+  
+  .textcoloract {
+    color: var(--primary-color);
+  }
+
+  .textcoloract:hover {
+    color: var(--secondary-color);
+  }
+
+  .textcolordev {
+    color: var(--secondary-color);
+  }
+  
+  .about {
+    margin: 0;
+    min-height: 60vh;
+    padding: 20px;
+    background-image: url(/assets/img/accueil/photovoltaic-system-g6548cd95f_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .box-about {
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: #fff;
+    padding: 50px;
+  }
+  
+  /*FONDATEURS*/
+  
+  .fondateurs {
+    margin: 0;
+    min-height: 60vh;
+  }
+  
+  .box-fondateurs {
+    padding: 30px;
+    border-radius: 20px;
+  }
+  
+  .box-fondateurs h2 {
+    color: var(--primary-color);
+  }
+
+  .box-fondateurs p{
+    color: var(--quatro-color);
+  }
+
+  .box-fondateurs li{
+    color: var(--quatro-color);
+  }
+
+  .image-fondateurs img {
+    width: 75%;
+  }
+  
+  /* VEHICULE ELECTRIQUE DESCRIPTION */
+  
+  .vehicule-desc {
+    margin: 0;
+    min-height: 70vh;
+    padding: 20px;
+    background-image: url(/assets/img/about/JM-8993.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .box-vehiculedesc {
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: #fff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  
+  .box-vehiculedesc h2, h3 {
+    color: var(--secondary-color);
+  }
+
+  .box-vehiculedesc ul {
+    font-size: 1.3rem;
+  }
+  
+  .caracteristiques {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+  }
+
+  .box-vehiculedesc a {
+    text-decoration: none;
+  }
+
+  /*R&D*/
+  
+  .recherchedev {
+    margin: 0;
+    min-height: 50vh;
+  }
+  
+  .box-recherchedev {
+    padding: 30px;
+    border-radius: 20px;
+  }
+  
+  .box-recherchedev h2 {
+    color: var(--primary-color);
+  }
+
+  .box-recherchedev p {
+    color: var(--quatro-color);
+  }
+
+  .box-recherchedev li {
+    color: var(--quatro-color);
+  }
+
+  .image-rd img {
+    width: 90%;
+  }
+  
+  /*LOCALISATION*/
+  
+  .title-localisation {
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .box-localisation {
+    font-size: 1rem;
+  }
+
+  .box-localisation p{
+    color: var(--quatro-color);
+  }
+
+  .localisation {
+    margin: 0;
+    min-height: 50vh;
+  }
+  
+  /*-------------------------------------------------------------- # PRODUIT --------------------------------------------------------------*/
+  
+  .textcolorombriere {
+    color: var(--primary-color);
+  }
+  
+  /* CAROUSEL */
+  
+  #carouselMain img {
+    position: relative;
+    z-index: -1;
+    height: 50vh;
+  }
+  
+  #carouselMain span {
+    position: absolute;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    /* si on veut une seul span mettre -50%,-50% sur le translate */
+    transform: translate(-80%, -100%);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+  }
+  
+  #carouselMain span.second-span {
+    transform: translate(-60%, -10%);
+  }
+  
+  /*OMBRIERES*/
+  
+  .ombrieres {
+    margin: 0;
+    margin-top: 20px;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url(/assets/img/product/panneaux4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .box-ombrieres {
+    margin: 0;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+  }
+
+  .ombrieres-service {
+    padding: 10px;
+    border: solid black 2px;
+  }
+  
+  .ombrieres-service img {
+    width: 50%;
+  }
+  
+  /*INFORMATIONS PRODUITS*/
+  
+  .infoproduit {
+    margin: 0;
+    min-height: 60vh;
+  }
+  
+  .box-infoproduit {
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  .box-infoproduit h2 {
+    color: var(--secondary-color);
+  }
+  
+  .box-infoproduit p {
+    color: var(--quatro-color);
+  }
+
+  .image-infoproduit img {
+    width: 75%;
+  }
+
+  /*STRATEGIE DE DEVELOPPEMENT*/
+  
+  .stratdev {
+    margin: 0;
+    margin-top: 20px;
+    min-height: 60vh;
+    background-image: url(/assets/img/product/panneaux4.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .box-stratdev {
+    padding: 30px;
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: #fff;
+  }
+
+  .box-stratdev h2 {
+    color: var(--primary-color);
+  }
+
+  /* DOMAINES - STRATEGIE DE DEVELOPPEMENT */
+
+  .dom-stratdev1 {
+    padding: 30px;
+  }
+
+  .dom-stratdev2 {
+    padding: 30px;
+  }
+  
+  .box-domstratdev1 {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .box-domstratdev1 {
+    color: var(--quatro-color);
+  }
+
+  .box-domstratdev h2 {
+    color: var(--secondary-color);
+  }
+
+  .box-domstratdevalt h2 {
+    color: var(--secondary-color);
+  }
+
+  /* CONNAISSANCES */
+
+  .connaissances {
+    margin: 0;
+    min-height: 75vh;
+    padding: 20px;
+    background-image: url(/assets/img/product/panneaux2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .box-connaissances {
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: #fff;
+  }
+
+  .pann-energ {
+    color: var(--primary-color);
+  }
+
+  .sun-implantation{
+    color: var(--primary-color);
+  }
+
+  .sun-partenaire{
+    color: var(--secondary-color);
+  }
+
+  .sun-product-just{
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  /*-------------------------------------------------------------- # Legal --------------------------------------------------------------*/
+.sun-mention-span {
+  color: white;
+}
+
+.box-legal a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.box-legal p {
+  color: grey;
+}
+
+.box-legal {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+  /*-------------------------------------------------------------- # Informations --------------------------------------------------------------*/
+  .sun-mention-span {
+    color: white;
+  }
+  
+  .box-informations a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  .box-informations p {
+    color: grey;
+  }
+
+  .box-informations li {
+    color: grey;
+  }
+  
+  .box-informations {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+  }
+  
