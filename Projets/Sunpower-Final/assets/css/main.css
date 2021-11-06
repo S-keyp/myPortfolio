@@ -491,7 +491,7 @@
     margin: 0;
     min-height: 60vh;
     padding: 20px;
-    background-image: url(/assets/img/accueil/photovoltaic-system-g6548cd95f_1920.jpg);
+    background-image: url(../img/accueil/photovoltaic-system-g6548cd95f_1920.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -539,7 +539,7 @@
     margin: 0;
     min-height: 70vh;
     padding: 20px;
-    background-image: url(/assets/img/about/JM-8993.jpg);
+    background-image: url(../img/about/JM-8993.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -660,7 +660,7 @@
     margin-top: 20px;
     min-height: 100vh;
     padding: 20px;
-    background-image: url(/assets/img/product/panneaux4.jpg);
+    background-image: url(../img/product/panneaux4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -712,7 +712,7 @@
     margin: 0;
     margin-top: 20px;
     min-height: 60vh;
-    background-image: url(/assets/img/product/panneaux4.webp);
+    background-image: url(../img/product/panneaux4.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -763,7 +763,7 @@
     margin: 0;
     min-height: 75vh;
     padding: 20px;
-    background-image: url(/assets/img/product/panneaux2.jpg);
+    background-image: url(../img/product/panneaux2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
